@@ -126,6 +126,9 @@ Due to OpenIPC limitations for this platform screen is not supported and won't b
 Screen is wired directly to GOKE SoC power rail anyway, so it'd be on all the time. You could technically replace OpenIPC's kernel modules with stock ones from GOKE SDK but then you run into issues with broken Majestic, etc. Missing libraries for framebuffer are osal.ko, gk7205v200_sys.ko, gk7205v200_base.ko, gk7205v200_vo.ko, gfbg.ko and ssp_st7796_ex.ko. Not an easy job. Then you need some kind of daemon displaying local rtsp stream onto /dev/fb0 which is going to be a challenge considering available SPI memory (below 1MB, some already taken by network modules). Not an easy job.  
 MCU at this point can be just removed. 
 
+### Future plans
+1. Implement NIC utilizing GK7202 UART, freeing USB line. Basically connect ESP32-S3 (ESP32-S3FH4R2) via level shifter (something like TXS0102) to translate 1.8V<=>3.3V signalling and power it off 3.3V line that was previously utilized by desoldered hi3861. It can be used as secondary, emergency control link. It'd be problematic to use it for rtsp transport towards wifi, BUT it would be useful for driving the display and displaying secondary rtsp stream limited to 10FPS and much lower resolution. That would also imply replacing the screen with model that uses SPI.
+
 ### Final look
 <img width="800" height="640" alt="20260911_211641" src="https://github.com/user-attachments/assets/5d640174-9e4f-4d27-bdaa-c63d87c92b4e" />
-<img width="800" height="640" alt="20260912_002303" src="https://github.com/user-attachments/assets/edfd67ef-3d96-4d61-bf96-91e811c38818" />
+<img width="800" height="640" alt="20260913_025700" src="https://github.com/user-attachments/assets/7709d584-62be-473f-a572-6f4ab7e173fd" />
