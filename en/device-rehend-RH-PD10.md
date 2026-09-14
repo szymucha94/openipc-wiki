@@ -133,9 +133,9 @@ MCU at this point can be just removed.
 
 Doesn't work yet. Picked up by sdio subsystem but doesn't respond to firmware upload. Probably broken driver refusing to work with kernel 4.9.x.
 
-<img width="800" height="640" alt="20260913_222405" src="https://github.com/user-attachments/assets/f309d9fb-7527-4a72-9fbc-760dbf7873a7" />
+<img width="640" height="800" alt="20260913_222405" src="https://github.com/user-attachments/assets/f309d9fb-7527-4a72-9fbc-760dbf7873a7" />
 <img width="800" height="640" alt="20260913_222416" src="https://github.com/user-attachments/assets/fe0bb691-d74c-4898-ad4e-526a05e4d9da" />
-<img width="800" height="640" alt="20260914_012333" src="https://github.com/user-attachments/assets/3f8860a7-0b37-413c-9c1d-8f5fd600f7a7" />
+<img width="640" height="800" alt="20260914_012333" src="https://github.com/user-attachments/assets/3f8860a7-0b37-413c-9c1d-8f5fd600f7a7" />
 <img width="800" height="640" alt="20260914_012341" src="https://github.com/user-attachments/assets/ecb7da34-0830-4f85-8b03-62526c1c83c6" />
 
 
